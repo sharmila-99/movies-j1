@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Membership Registration Form</h1>
+    </header>
+
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+
+        <label for="membership-type">Membership Type:</label>
+        <select id="membership-type">
+            <option value="free">Free</option>
+            <option value="basic">Basic</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <label for="message">Additional Comments:</label>
+        <textarea id="message" placeholder="Enter any additional comments"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        // Additional JavaScript can be added here
+    </script>
+</body>
+
+</html>
